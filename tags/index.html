@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-  <meta name="generator" content="Hugo 0.111.3">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Tags" />
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://&lt;username&gt;.github.io/tags/" />
-<title>Tags | My New Hugo Site</title>
+<title>Tags | Hugo Book</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/en.search.min.8592fd2e43835d2ef6fab8eb9b8969ee6ad1bdb888a636e37e28032f8bd9887d.js" integrity="sha256-hZL9LkODXS72&#43;rjrm4lp7mrRvbiIpjbjfigDL4vZiH0="></script>
-<link rel="alternate" type="application/rss+xml" href="https://<username>.github.io/tags/index.xml" title="My New Hugo Site" />
+  <link rel="alternate" hreflang="ru" href="https://%3cusername%3e.github.io/ru/tags/" title="Tags">
+  <link rel="alternate" hreflang="zh" href="https://%3cusername%3e.github.io/zh/tags/" title="Tags">
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.df7d0f4a1e117d4e2c84814e9ebec0062101e62e43fd57cb78ff3fb7c8c738b8.js" integrity="sha256-330PSh4RfU4shIFOnr7ABiEB5i5D/VfLeP8/t8jHOLg=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://<username>.github.io/tags/index.xml" title="Hugo Book" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
-
   
 </head>
-
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -33,7 +35,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a href="/"><span>My New Hugo Site</span>
+  <a class="flex align-center" href="/"><span>Hugo Book</span>
   </a>
 </h2>
 
@@ -46,6 +48,52 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://%3cusername%3e.github.io/ru/tags/">
+          Russian
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://%3cusername%3e.github.io/zh/tags/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
 
 
 
@@ -67,6 +115,30 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
 
 
 
@@ -76,7 +148,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -112,6 +184,16 @@ https://github.com/alex-shpak/hugo-book
       <strong>Categories</strong>
       <ul>
       
+        <li class="flex justify-between">
+          <a href="/categories/Development/">Development</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/categories/golang/">golang</a>
+          <span>2</span>
+        </li>
+      
       </ul>
     </li>
     
@@ -120,6 +202,36 @@ https://github.com/alex-shpak/hugo-book
     <li class="book-section-flat">
       <strong>Tags</strong>
       <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/development/">development</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/go/">go</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/golang/">golang</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/hugo/">hugo</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/templates/">templates</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/themes/">themes</a>
+          <span>1</span>
+        </li>
       
       </ul>
     </li>
@@ -137,6 +249,126 @@ https://github.com/alex-shpak/hugo-book
       
       
   
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/development/">development</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/go/">go</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/golang/">golang</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/hugo/">hugo</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/templates/">templates</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/tags/themes/">themes</a>
+    </h2>
+    
+  <h5>April 2, 2014</h5>
+
+
+
+  
+
+  
+
+
+
+
+    <p>
+    </p>
+  </article>
+  
 
   
  
@@ -151,6 +383,11 @@ https://github.com/alex-shpak/hugo-book
 
 
 </div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
 
  
         
@@ -175,6 +412,16 @@ https://github.com/alex-shpak/hugo-book
       <strong>Categories</strong>
       <ul>
       
+        <li class="flex justify-between">
+          <a href="/categories/Development/">Development</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/categories/golang/">golang</a>
+          <span>2</span>
+        </li>
+      
       </ul>
     </li>
     
@@ -183,6 +430,36 @@ https://github.com/alex-shpak/hugo-book
     <li class="book-section-flat">
       <strong>Tags</strong>
       <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/development/">development</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/go/">go</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/golang/">golang</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/hugo/">hugo</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/templates/">templates</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/themes/">themes</a>
+          <span>1</span>
+        </li>
       
       </ul>
     </li>
@@ -199,7 +476,6 @@ https://github.com/alex-shpak/hugo-book
 
   
 </body>
-
 </html>
 
 

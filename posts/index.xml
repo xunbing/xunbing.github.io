@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Hugo Book</title>
+    <link>https://&lt;username&gt;.github.io/posts/</link>
+    <description>Recent content in Blog on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://<username>.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://&lt;username&gt;.github.io/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://&lt;username&gt;.github.io/posts/creating-a-new-theme/</guid>
+      <description>Introduction#This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://&lt;username&gt;.github.io/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://&lt;username&gt;.github.io/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static#Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://&lt;username&gt;.github.io/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://&lt;username&gt;.github.io/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://&lt;username&gt;.github.io/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://&lt;username&gt;.github.io/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo#Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs#Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://&lt;username&gt;.github.io/posts/NVIDIA%E7%94%9F%E6%80%81%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://&lt;username&gt;.github.io/posts/NVIDIA%E7%94%9F%E6%80%81%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D/</guid>
+      <description>NVIDIA生态中的一些常见概念介绍#1. 背景#对NVIDIA全系产品常见概念进行简单梳理，以便了解各架构发展历程、显卡算力及引擎开发可能涉及的库。
+2. 概念区分#概念区分 加速卡，Product级别概念，如V100卡，3080Ti卡 GPU，Chip级别概念，如V100卡搭载的是GV100的GPU芯片 CUDA 英伟达的并行计算平台和应用程序编程接口（API）模型。 CUDA-X CUDA-X AI 是软件加速库的集合。这些库建立在 CUDA® （NVIDIA 的开创性并行编程模型）之上，提供对于深度学习、机器学习和高性能计算 (HPC) 必不可少的优化功能。这些库包括 cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、NVIDIA® TensorRT™（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过 13 个的其他库。 CUDA Core nvidia GPU的处理器核心或叫像素管道。相同架构下的GPU，越多的CUDA Core代表着越高的性能。什么是架构，有哪些架构，本文有详细说明。GPU架构与CUDA Core的数量一样重要，更先进的架构的加速卡，不一定比用了老架构的卡更快，比如T4就不如V100。 Stream Processor AMD家的“CUDA Core”。不能将 CUDA Core和Stream Processer等同起来，两者功能相似，但是不可比。 Tensor Core Nvidia在其Volta架构中引入了Tensor Core这一特殊功能单元，使得Tesla V100的峰值吞吐率可以达到Tesla P100 32位浮点吞吐率的12倍，开发者也可以利用混合精度在不牺牲精度的情况下达到更高的吞吐率。 自Volta架构首次推出 Tensor Core 技术到目前（07）的Hoper架构以来，NVIDIA GPU 的峰值性能提高了 60 倍。 TFFLOPS 一个TFLOPS（teraFLOPS）等于每秒一万亿（=10^12）次的浮点运算。 NVLINK 高速互联技术，2016年随Pascal GP100 GPU和Tesla P100加速器一起推出。 与PCIe互联技术相比，可以提供GPU之间GPU和CPU之间更高速的传输性能。 GDDR6 第六版图形用双倍资料传输率（Graphics Double Data Rate, version 6，简称GDDR6）是一种高带宽的显示存储器标准，用于显卡、游戏终端以及高性能运算上。 各个Tensor Core架构支持的精度类型 3.</description>
+    </item>
+    
+  </channel>
+</rss>
